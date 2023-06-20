@@ -1,0 +1,25 @@
+
+#flex1{
+    width: 1000px;
+    height: 300px;
+    border:1px solid black;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#flex1 div{
+    width:25%;
+}
+
+.red{
+    background:red;
+}
+.yellow{
+    background:yellow;
+}
+.green{
+    background:green;
+}
+.blue{
+    background:blue;
+}

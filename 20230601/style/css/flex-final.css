@@ -1,0 +1,120 @@
+.header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.header_logo img {
+    width: 1080px;
+    height: 150px;
+}
+
+.first_image{
+    display: flex;
+    border: 1px solid #000;
+    background: violet;
+    border-radius: 10px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.first_image img{
+    width: 500px;
+    height: 500px;
+    
+}
+.all{
+    width: 1080px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.first_image{
+    display: flex;
+    width: 15%;
+    background-color: blue;
+    border:1px solid black;
+    height: 600px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.second_image{
+    display: flex;
+    width: 60%;
+    background-color: aqua;
+    border:1px solid black;
+    height: 160px;
+    overflow: hidden;
+    margin: 20px 0;
+    
+    
+}
+.allll{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.second_first{
+
+
+}
+
+
+.third_image{  
+    display: flex;
+    width: 15%;
+    background-color: red;
+    border:1px solid black;
+    height: 600px;
+    overflow: hidden;
+    margin: 20px 0;
+
+}
+
+
+
+/*
+
+
+
+
+<div   center> = 1080px   -------- flex
+
+<div css가서 백그라운드 이미지 설정 url()>
+세로이미지  15%
+<div>
+
+
+<div 1> ====== 60%  --------------- flex , 방향 colunm /
+
+<div2> - background.box ---- flex
+<div 사진1></div>
+<div 텍스트1></div>
+<div>
+
+<div2> -background.box  ---- flex
+<div 사진1></div>
+<div 텍스트1></div>
+<div>
+
+
+<div2> - background.box ---- flex
+<div 사진1></div>
+<div 텍스트1></div>
+<div>
+
+
+<div>
+
+
+
+
+<div ss가서 백그라운드 이미지 설정 url()>
+세로이미지  15%
+<div>
+
+<div>
+
+*/

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>계림 카페 주문하기</title>
+    <link rel="stylesheet" href="./static/css/script_func2.css">
+    <script src="./static/js/script_func2.js"></script>
+</head>
+<body>
+    <h1>계림 카페 주문하기</h1>
+    <form>
+        <div>
+            <label for="drink">음료명:</label>
+            <input type="text" id="drink" required>
+        </div>
+        <div>
+            <label for="temperature">온도:</label>
+            <select id="temperature">
+                <option value="아이스">아이스</option>
+                <option value="핫">핫</option>
+            </select>
+        </div>
+        <div>
+            <label for="size">사이즈:</label>
+            <select id="size">
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+        </div>
+        <button type="button" onclick="addOrder()">주문 추가</button>
+    </form>
+
+    <h2>주문 내역</h2>
+    <ul id="orderList"></ul>
+
+    </script>
+</body>
+</html>

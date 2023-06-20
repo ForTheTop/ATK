@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수목</title>
+
+    <style>
+        #wrap{
+            width:1250px;
+            border: 1px solid black;
+
+        }
+        #wrap tr td{
+        position: relative;}
+
+        .head{
+            width:1200px;
+            height:50px;
+            text-align:right;
+            font-size:30px;
+            color:blue;
+        }
+        body{
+            padding:0;
+            margin:0;
+        }
+
+
+        .logo_wrap{
+            width: 150px;
+        }
+        .logo_wrap img{
+            width: 150px; height: 80px;
+        }
+        #menu_list tr td{
+            border: 1;
+            padding:0 30px;
+        }
+        .menu_list{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        /* float은 해당 태그(요소)를 어떻게 정렬할지 정의하는 속성이다.
+           float은 묶음 태그에만 적용(<div>, <p>, <ol>, <ul>, <table>, <img>)
+            float:left 는 왼쪽 정렬
+                - float이 적용된 태그들이 한줄로 왼쪽 정렬 된다.
+            */
+        .menu_list_title{
+            float: left;
+            padding:0 24px;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            color: brown;
+        }
+            .content_wrap{
+                background-image: url('../image/forest12345.jpg');
+                width: 1000px;
+                background-size: cover;
+                background-position: center;
+            }
+            .content_Text{
+                position: absolute;
+                top: 0;
+                left: 200px; /* 위치를 옮기는용도로 쓰인다 */
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                font-size: 32px;
+                font-weight: 900;
+                font-family: Impact;
+                padding-left: 150px;
+            }
+            .mainText{
+                font-size: 96px;
+                margin: 20px; 0px 40px 0px; /* 위 오른쪽 아래 왼쪽*/
+            }
+            .subText{
+                letter-spacing: 5px;   /*글씨의 간격을 늘려줌*/
+                margin:90px 0px; /*위아래 오른쪽왼쪽 */ 
+            }
+            .undertext{
+                text-decoration: underline;  /*글씨아래에 데코레이션개념*/
+                text-underline-offset: 10px; 
+            }
+            .grayText{
+                /*color: gray;*/
+                opacity: 0.6; /* 값 범위 : 0 ~ 1(소숫점 단위로 사용이가능) */
+            }
+            
+    </style>
+
+</head>
+<body>
+    <table id="wrap">
+        <tr>
+            <td colspan="2" class="head">
+                HOME / 로그인 / 사이트맵 / 대전광역시청
+            </td>
+        </tr>
+
+        <tr>
+            <td class="logo_wrap">
+                <a href="">
+                <img src="../image/Forest.jpg" alt="로고이미지">
+                </a>
+            </td>
+
+        <td class="menu_wrap">
+            <ul class="menu_list">
+                <a href=""><li class="menu_list_title">한밭수목원</li></a>
+                <li class="menu_list_title">나무병원</li>
+                <li class="menu_list_title">둘러보기</li>
+                <li class="menu_list_title">열대식물원</li>
+                <li class="menu_list_title">양모/화훼</li>
+                <li class="menu_list_title">열린마당</li>
+            </ul>
+        </td>
+
+        <tr>
+            <td colspan="2" class="content_wrap">
+                <img src="../image/forest2.png">
+                <ul class="content_Text">
+                    <li class="mainText"></li>
+                    <li class="subText undertext"></li>
+                    <li class="subText grayText"></li>
+                    <li class="subText grayText"></li>
+
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>naver.com</td>
+        </tr>
+        <tr>
+            <td>naver.com</td>
+        </tr>
+    </table>
+</body>
+</html>

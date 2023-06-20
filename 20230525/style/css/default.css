@@ -1,0 +1,172 @@
+body{
+    /* body에 여백을 제거하여 화면에 꽉채워서 사용하려고 합니다.요.*/
+    padding:0;
+    margin:0;
+    background-color: violet;
+    color:#e6e6e6;
+    position: relative;
+}
+
+#wrap{
+    position:relative;
+    width:100%;
+}
+
+#header{
+    width: 1200px; /* px단위와 %단위로 설정했을때 각각다르게된다*/
+    margin:0 auto;
+    background-color: #878c9e;
+    position:sticky;
+    z-index: 100;
+    top: 0;
+    /*overflow: hidden; 자식이 float를 가졌을때 높이를 유지시킬 수 있음.
+    display:inline header안에 있는 영역을 표시해줌으로써 밖에 있는것을 안으로 끌어당긴다.*/
+    display:flex; /*반드시 메뉴의 메인태그에 사용해야 적용된다. 부모쪽에 할당해야한다 자식쪽에할당하면 적응이 되지않는다.*/
+    padding:20px 0;
+    font-size:25px;
+    justify-content: space-between; /* 간격을 일정하게 벌려준다. display:flex 나 display:grid*/
+}
+#section {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 15px;
+}
+.section_left{
+    width:80%;
+    height: 800px;
+    /*background: #a1a5b6;*/
+}
+.section_right{
+    width: 20%;
+    height:400px;
+    background: #6f7486;
+}
+.section_left .mainImage{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.section_left .mainImage img{
+    width:100%;
+}
+    .notice_adImg{
+            width:100%;
+            display: flex;
+            position: relative;
+    }
+    .notice_adImg .notice_box{
+        width:70%;
+        position: relative;
+    }
+    .notice_adImg .notice_box .notice_list{
+        /* 공지사항 ul태그 */
+        /*list-style-type:circle;*/
+        /*list-style-image: url('../image/listIcon.png');*/
+        list-style-type: none;
+    }
+    .notice_adImg .notice_box .notice_list li::before{
+        content:'';
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        background-image: url('../image/listIcon.png'); 
+        background-size: 15px;
+        background-repeat: no-repeat;
+        margin-right:5px;
+    }
+    .notice_adImg .notice_box .notice_list li{
+        /* 공지사항 li태그 */
+        padding: 5px 0;
+    }
+    .notice_adImg .notice_box .notice_more{
+        /* 공지사항에 more 텍스트 있는 h5 */
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
+    .notice_adImg .adImg_box{
+        width:30%;
+        overflow:hidden;
+        display: flex;
+        align-items: center;
+    }
+    .notice_adImg .adImg_box img{
+        width:100%;
+    }
+    .notice_adImg .coop_box .imageList img{
+        width:100%
+    }
+    .coop_box{
+        width:100%
+    }
+    .coop_box .imagelist{
+        width:100%;
+        display: flex;
+        height:80px;
+        justify-content: space-between;
+    }
+    .coop_box .imagelist img{
+        width:140px;
+    }
+    .login_wrap{
+        text-align: center;
+        border:1px solid #cbcbcb;
+        height:120px;
+    }
+    .subMenu_list {
+        font-size: 25px;
+        list-style-type: none;
+        text-align: center;
+        padding: 25px;
+        margin:0;
+        font-size:20px;
+        font-weight: 700;
+
+
+    }
+    .subMenu_wrap .subMenu_list .list:hover{
+        background: gray;
+        color: red;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .subMenu_wrap .subMenu_list{
+            padding: 30px;
+            text-align: center;
+    }
+    .subMenu_wrap{
+        margin-top:50px;
+        padding:10px;
+    }
+    /*.subMenu_list{
+        padding:0;
+        margin:0;
+        list-style-type: none;
+        font-size:20px;
+        font-weight: 700;
+        text-align: center;
+    }*/
+    #footer{
+        width:1200px;
+        margin:0 auto;
+    }
+    .ft_menu{
+        width:100%;
+        padding:30px;
+    }
+    .ft{
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        display:flex;
+    }
+    .ft li{
+        padding-right:30px;
+    }
+    .address{
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        padding-right: 30px;
+    }

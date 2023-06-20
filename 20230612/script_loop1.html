@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+        제어문은 공통적으로 조건에 의해 동작한다.
+        반복문은 정해진 횟수만큼 반복을 시킬수 있고 무한대로 반복 할수도있다.
+        반복문 사용시 무한루프에 빠지지않게 코드를 작성해야한다.
+        반복문에 무한루프를 사용시에는 항시 빠져나올수 있는 코드를 둬야한다.
+
+        반복문은 기본적으로 지정된 횟수만큼 실행 될수 있다.
+        지정된 횟수만큼 실행 되려면 처음 시작값과 끝값이 필요하다.
+        시작값을 1, 끝 값을 10으로 설정하면 1,2,3,4,5,6,7,8,9,10 총숫자가
+        10개이므로 반복횟수는 10번 반복된다.
+        시작값과 끝나는 값을 설정하고 시작값에서 얼마씩 증가 할것인지, 또는 감소할것인지
+        설정도 필요하다. 증가또는 감소의 값에 따라서 반복되는 횟수가 달라진다.
+
+
+        for(시작값 ; 끝나는값; 증가또는 감소값){
+
+        }
+        for(var i=1; i<=10; i++){
+
+        }
+        반복문에 설정해준 조건식이 참인경우에만 반복문의{}안에 내용이 실행된다.
+        조건식이 거짓이 되면 반복문은 그즉시 종료, 더이상 실행되지않는다.
+
+        시작값은 특별한경우가 아니라면 반복횟수의 편의를 위해 1또는 0부터 시작한다.
+        증가또는 감소값은 특별한경우 아니라면 1씩 증가,감소한다.
+
+        */
+       //1~9중에서 숫자 하나를 입력받아 입력한 숫자에 맞는 구구단 출력되게 하시오.
+        // for(var i=1; i<=9; i++){
+        // document.write("<div>"+(i*2)+"</div>");
+        // }
+
+        // var number = parseInt(prompt("1부터 9까지의 숫자 중 하나를 입력하세요:"));
+        // for(let i = 2; i <= 9; i++) {
+        // document.write(i + '단');
+        // document.write('<br>');
+        // for(let j = 1; j <= 9; j++) {
+        //     document.write(i + ' * ' + j + ' = ' + (i*j));
+        //     document.write('<br>');
+        // }
+        // }
+        // //실습2 . 1부터 77까지 출력하시오
+
+        // for(var i=1; i<=77; i++){
+        //     document.write("<div>"+i+"</div>");
+        // }
+
+        //실습 3. 1부터 120까지 3씩 증가해서 출력
+
+            // document.write("<ul style='list-style-type: none;'>");
+            // for (var i = 1; i <= 120; i= i+3) {
+            // document.write("<li>" + i + "</li>");
+            // }
+            // document.write("</ul>");
+                // 사용자로부터 정수 입력 받기
+            // var startingNumber = parseInt(prompt("정수를 입력하세요:"));
+
+            // // 반복문 실행
+            // for (var i = 0; i < 12; i++) {
+            // document.write(startingNumber);
+            // startingNumber++;
+            // }
+            // var win=0, lose=0;
+            // for(var i=0; i<=10; i++){
+
+            // }
+            //                 function rollDice() {
+            // return Math.floor(Math.random() * 6) + 1;
+            // }
+
+            // function playGame() {
+            // let userWins = 0;
+            // let computerWins = 0;
+            // let draws = 0;
+
+            // for (let i = 0; i < 10; i++) {
+            //     const userRoll = rollDice();
+            //     const computerRoll = rollDice();
+
+            //     document.write("라운드", i + 1);
+            //     document.write("나", userRoll);
+            //     document.write("컴터", computerRoll);
+
+            //     if (userRoll > computerRoll) {
+            //     document.write("이김!");
+            //     userWins++;
+            //     } else if (userRoll < computerRoll) {
+            //     document.write("컴터가 이김!");
+            //     computerWins++;
+            //     } else {
+            //     document.write("비김!");
+            //     draws++;
+            //     }
+
+            //     console.log("--------------------------------");
+            // }
+
+            // document.write("최종 결과:");
+            // document.write("이김", userWins, "times");
+            // document.write("컴퓨터 우승", computerWins, "times");
+            // document.write("There were", draws, "draws");
+            // }
+
+            // playGame();
+            //UP & DOWN 게임
+            //랜덤의 숫자 하나 (랜덤범위는 1~50)
+            //랜덤 숫자를 맞출때까지 계속 입력하기
+            // 입력한 숫자가 랜덤 값과 일치하지않으면 UP 또는 DOWN 이라고 출력
+            // 입력한 숫자가 랜덤값보다 작으면 UP,
+            // 입력한 숫자가 랜덤값보다 크면 DOWN
+            // 출력은 alert로
+            // 정답이면 화면에 write로 랜덤숫자와 함께 정답이라고 출력
+            //    function playGame() {
+            // var randomNumber = Math.floor(Math.random() * 50) + 1;
+            // var guess = parseInt(prompt("1부터 50 사이의 숫자를 추측해보세요:"));
+
+            // while (guess !== randomNumber) {
+            //     if (guess > randomNumber) {
+            //     alert("DOWN");
+            //     } else {
+            //     alert("UP");
+            //     }
+
+            //     guess = parseInt(prompt("다시 추측해보세요:"));
+            // }
+
+            // document.write("정답입니다! 랜덤 숫자는 " + randomNumber + "입니다.");
+            // }
+
+            // playGame();
+
+            // 내가 제시하는 숫자를 컴퓨터가 맞춰야된다. 
+
+            // 게임 시작 함수
+            function startGame() {
+            var minNumber = 1; // 최소 숫자 범위
+            var maxNumber = 50; // 최대 숫자 범위
+            var guessCount = 0; // 추측 횟수
+
+            // 사용자가 숫자를 제시했을 때 실행되는 함수
+            function makeGuess() {
+                // 컴퓨터의 추측
+                const computerGuess = Math.floor((minNumber + maxNumber) / 2);
+                guessCount++;
+
+                const userResponse = prompt(
+                `컴퓨터가 추측한 숫자는 ${computerGuess}입니다. 맞으면 "정답", 숫자가 크면 "UP", 숫자가 작으면 "DOWN"을 입력하세요.`
+                );
+
+                if (userResponse === '정답') {
+                alert(`컴퓨터가 ${guessCount}번 만에 맞췄습니다!`);
+                } else if (userResponse === 'UP') {
+                minNumber = computerGuess + 1;
+                makeGuess();
+                } else if (userResponse === 'DOWN') {
+                maxNumber = computerGuess - 1;
+                makeGuess();
+                } else {
+                alert('올바른 응답을 입력하세요.');
+                makeGuess();
+                }
+            }
+
+            makeGuess(); // 게임 시작
+            }
+
+            startGame(); // 게임 실행
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

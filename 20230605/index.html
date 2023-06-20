@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 지금까지 수업 중에서 이해 안되는 거 한사람당 하나씩만 의무적으로
+        
+        1. ID와 CLASS
+        id는 html문서에서 유일한 명칭이고, class는 여러태그들이 같은 명칭을 가질수있다.
+        class를 하지않고 id를 사용하는이유 !
+        id는 단일 이고 class는 다수의 값이기 때문에  인식 하는 자체가 다르다.
+        class는 배열이라는 형태로 처리되고, id는 단일 값으로 처리된다.
+        배열이라는 것은 값이 하나일수도 있고 여러개 일수도 있는 자료구조의 한 구조이다.
+        처음 html문서가 브라우저에 오픈 되면 class들을 배열의 구조로 저장해둔다.
+        id는 변수의 구조이다. 변수와 배열에대해서는 자바스크립트에서 다룰것인데
+        변수와 배열은 사용하는 방식이 다르다. 접근하는 것은 변수가빠르다.
+        또!! style에서 태그 > id > class 순서로 style이 적용되는 순위가 다르다.
+        class 보다는 id가 더 우선이다.
+        그래서 class를 사용하는 이유는 대체적으로 개발자들은 여러태그들을 하나의 이름으로
+        style을 적용하고 싶거나 또는 자식 태그들에 사용한다. 왜 자식태그에 사용하냐면
+        class가 id보다는 우선순위가 낮으니까...
+
+        2. flex-flow는 flex-direction과 flex-wrap의 단축속성이다.-->
+
+        3. Z-index
+
+        #box1{
+            height:50px;
+            background: salmon;
+        }
+        
+        #box2{
+            height:100px;
+            background: teal;
+        }
+
+        <div id="box1">
+            <div class="box1_child"></div>
+        </div>
+
+        <div id="box2">
+            <div class="box1_child"></div>
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    var shape = prompt("도형을 입력하세요 (square, rectangle, circle):");
+    var color = prompt("배경색을 입력하세요 (red, blue, yellow, pink):");
+    var width = parseInt(prompt("너비를 입력하세요 (100px 이상):"));
+    var height = parseInt(prompt("높이를 입력하세요 (100px 이상):"));
+
+    if (shape === "square") {
+        document.write("<div style='width:" + width + "px; height:" + width + "px; background:" + color + "'></div>");
+    } 
+    else if (shape === "rectangle") {
+        document.write("<div style='width:" + width + "px; height:" + height + "px; background:" + color + "'></div>");
+    } 
+    else if (shape === "circle") {
+        document.write("<div style='width:" + width + "px; height:" + width + "px; border-radius:50%; background:" + color + "'></div>");
+    }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap');
+    .body,ul,p,h1,h2,h3,h4,h5{
+        padding:0;
+        margin:0;
+    }
+
+    #wrap{
+        font-family: 'Noto Sans KR', sans-serif;
+        width: 100%;
+        position: relative;
+        top:0;
+        left:0;
+        background: white;
+    }
+
+    #header, #section_wrap, #footer{
+                width: 100%;
+                max-width: 1200px;
+                min-width: 800px;
+                margin:0 auto;
+                position:relative;
+    }
+
+    #header{
+        font-family: 'Noto Sans KR', sans-serif;
+            display: flex;
+            background: #6799ff;
+            align-items: center;
+            padding:10px 0;
+    }
+    #section_wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    #section_top{
+            order: 1;
+            display: flex;
+    }
+    #section_bottom{
+        order: 2;
+        display: flex;
+    }
+    #footer{
+
+    }
+    .logo{
+        width:140px;
+    }
+    .logo img{
+        width:100%;
+    }
+    .slider{
+        width: 400px;
+    }
+    .slider img{
+        width:100%;
+    }
+.menu{
+    /*width:calc( 100% - 140px );*/
+    flex-grow: 1;
+
+}
+.menu ul{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    display:flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.gallery{
+        width:500px;
+        padding: 10px;
+        box-sizing: border-box;
+}
+.gallery_box{
+    font-family: 'Noto Sans KR', sans-serif;src: ;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+.thumbnail{
+    width: 30%;
+    height: 100px;
+    overflow: hidden;
+}
+.thumbnail img{
+    width: 100%;
+}
+.popularSearch{
+    background: aqua;
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 25%;
+    background: #3c4752;
+}
+.popular_post .popular_list{
+    cursor: pointer;
+    padding: 5px 0;
+}
+.social{
+    flex-grow: 1;
+}
+@font-face
+    {
+        src:url('https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2');
+        font-family:'Meta';
+        font-style: normal;
+        font-weight: normal;
+    }
+
+.banner{
+        flex-grow: 1;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-evenly;
+        flex-grow: 1;
+        align-items: center;
+        background:#8357eb;
+}
+
+.banner main{
+    font-size: 60px;
+    font-family: 'Meta', sans-serif;
+    color: transparent; /*transparent는 투명도*/
+    text-align: center;
+    -webkit-text-stroke: 4px #d6f4f4; /*-webkit- : 구글 , 사파리 브라우저에서만 적용 -moz-: 파이어폭스 브라우저에 적용 -ms-:익스플로러, 엣지 적용 -o- : 오페라 브라우저에서 사용 접두어 -text-stroke : 글씨 테두리*/
+    font-variation-settings: 'wght' 900, 'ital' 1; /* 폰트의 설정을 일괄적으로 할수 있다.
+                                                    폰트 두께, 폰트 기울기, 폰트 너비를 설정할 수 있다. 
+                                                    wght는 폰트 두께, ital은 이탤릭체, wdth는 너비*/
+    transition: all 0.5s; /* transition: css의 속성을 변경할때 속도조절, CSS속성명 시간(단위는 초, 표기는s)*/
+    text-shadow: 5px 5px 0px blue, 8px 8px 0px #e601c0, 11px 11px 0px #e9019a, 14px 14px 0px #f40468, 34px 34px 10px #482896; /*text-shadow : 수평(가로)거리 수직(세로)거리 흐림정도 색; 순서로되어있고. 양수로 설정하면 오른쪽으로 음수는 왼쪽으로 그림자가표현된다*/
+}
+.banner main:hover{
+    font-variation-settings: 'wght' 100, 'ital' 0;
+    text-shadow: none;
+}
+
+#section_bottom{
+    order: 2;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+.latest_post {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 25%;
+    background: fuchsia;
+}
+.latest_post .latest{
+    cursor: pointer;
+    padding: 5px 0;
+}
+.popular_post {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 25%;
+    background: green;
+}
+.social{
+    flex-grow:1;
+    font-size: 40px;
+    background: #343638;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+#footer div{
+   align-self: flex-end; /* 자식쪽에만사용한다 */
+
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,18 @@
+#box1{
+    height: 50px;
+    background: salmon;
+    position: relative;
+}
+.box1_child{
+    height: 80px;
+    width: 500px;
+    background: #fff;
+    position: absolute;
+    top:40px;
+    z-index: 10;/*position이 static보다는 absolute나 relative인 상태에서 쓰는게좋다*/
+}
+
+#box2{
+    height: 100px;
+    background: teal;
+}

@@ -1,0 +1,123 @@
+#main_top{
+    display: flex;
+}
+
+.top_left{
+        width: 500px;
+        padding: 20px; /*실 사용영역은 왼쪽여백20 오른쪽여백20해서 460px이다*/
+}
+.top_left img{
+    width: 460px;
+}
+.top_right{
+        width: 500px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.item_title{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.item_price{
+    /*margin-bottom: 30px;*/
+    flex-grow: 1;
+    padding-top: 30px;
+}
+.item_button button:first-child{
+    border:1px solid #346aff;
+    color:1px solid #3461ff;
+    background: #fff;
+    width:200px;
+    height:50px;
+}
+.item_button button:last-child{
+        background: #346aff;
+        border:1px solid #346aff;
+        color: #fff;
+        width: 200px;
+        height:50px;
+}
+/*.main_text{
+        border-top: 1px solid #000;
+        background-color: beige;
+        display:flex;
+        justify-content: space-around;
+        font-size: 30px;
+
+}*/
+/*.main_image {
+    text-align: center;
+  }*/
+  /*.main_image img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+  }*/
+  #main_bottom{
+    border-top: 1px solid #000;
+   /*display:flex;*/
+    justify-content: space-around;
+    background : beige;
+    flex-grow: 1;
+    padding-top: 10px;
+  }
+  .final div {
+    display: block;
+    text-align: left;
+  }
+  .tab_title ul{
+    list-style-type: none;
+    width: 100%;
+    border-top:2px solid #555;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  .tab_title ul li{
+    display: inline-block;
+    width:24.61%; /*25%아래보다 작게해줘야 한줄가로로나옴*/
+    border-right: 1px solid #ccc;
+    text-align: center;
+    padding:15px 20px 14px 0;
+  }
+.tab_title ul li:first-child{
+    margin-bottom: -2px;
+    border-bottom: 1px solid #fff;
+}
+.detail_img{
+    width: 780px;
+    margin:50px auto; /* 지정된 width가있어야 auto가 적용이된다. 그리고 이미지태그에 display:block < 이것까지 2가지조건이있어야 margin:auto 0; 가 적용이된다. */
+  }
+#main_bottom{
+          margin-top:100px;
+          margin-bottom:100px;
+          width: 1080px;
+          border-top: 2px solid #555;
+          padding-top:50px;
+}
+.star_rating{
+        width:364px;
+}
+.star_rating, .star_rating span{
+              display:inline-block;
+              height: 55px;
+              overflow: hidden;
+              background:url(../image/star.png);
+}
+.star_rating span{
+              background-position: left bottom; /* 별을 색을칠하려면 왼쪽에서부터 시작해야되기때문에 left bottom; 으로 지정해놓은것이다.*/
+              line-height: 0;
+              vertical-align: top;
+              width: 80%;
+            }
+.guide_btn{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        color: aqua;
+}
+#main_bottom h3{
+            
+}

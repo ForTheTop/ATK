@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 바이킹 탑승 조건 키 150 이상 
+
+        /*var tall= parseInt(prompt("나의 키는"));
+        var result = (tall >= 150) ? "탑승가능" : "탑승불가";
+        // tall >= 150 이라는 조건식이 참이라면 ? 뒤에 값이 result에 저장
+        // 거짓이라면 : 뒤에 값이 result에 저장 
+        document.write(result);*/
+
+        
+        // var eyes = 1.2;
+        //내 시력이 1.0이상이면 좋은 눈을 가지고있군요 라고 출력
+        //         1.0 미만이면 검사를 받아보는게... 라고 출력
+
+
+        /* var result = (eyes >= 1.0) ? "좋은눈" : "검사";
+        document.write("내 시력이 1.0 이상이면 좋은 눈을 가지고 있군요.");
+        document.write("1.0 미만이면 검사를 받아보는게..."); */
+
+        // var time = 128; // 128분
+        // var cost = 1000; // 기본 요금 1000원
+        // result = (time > 120)? cost+1000 : cost;
+        // document.write(" 물품 보관료 : "+result);
+
+
+        // var time = 128; // 128분
+        // var cost = 1000; // 기본 요금 1000원
+        // result = ( time >120 )? cost+1000 : cost;
+        // document.write(" 물품 보관료 : "+result );
+        
+        // 주차장 기본요금이 1000원이다.
+        // 1시간 지나면 500원 추가 요금 있다.
+        // 2시간 지나면 1000원 추가 요금 있다.
+        // 주차 시간을 분으로 입력하여  주차요금 얼마를 지불해야 하는가 출력
+
+        // var time= parseInt( prompt("주차시간은 (분) "));
+        // var cost = 1000;
+        // var price = ( time > 60 ) ? cost+500 : cost;
+        // price = (time > 120 ) ? price + 1000 : price;
+        // document.write("주차 요금 : " + price +"<br>");
+
+                // 주차장 기본요금이 1000원이다.
+                // 1시간 지나면 500원 추가 요금 있다.
+                // 2시간 지나면 1000원 추가 요금 있다.
+                // 주차 시간을 분으로 입력하여 주차요금 얼마를 지불해야 하는가 출력
+
+    // 동전 앞면 뒷면 맞추기
+    // 출력 방법 2
+    //alert("나 알림창이야!!");
+    // var num = Math.floor(Math.random()*5)+10; // 1~10 난수
+
+    // alert(num);
+
+   // var coin = Math.floor(Math.random() * 2);
+   // var choice = parseInt(prompt("0. 앞면 , 1. 뒷면"));
+
+    // document.write("축하합니다! 맞추셨습니다.");
+    // document.write("아쉽지만 틀렸습니다. 다음 기회에 도전해보세요.");
+
+    // 주사위를 던졌다. (기본 주사위)
+    // 주사위의 값이 5보다크면 승리라고 출력 아니면 패배라고 출력
+
+    // var dice = Math.floor(Math.random() * 6) + 1;
+    // var result = ( dice >5) ? "승리" : "패배";
+    // // var result = ( dice ==6) ? "승리" : "패배"
+    // document.write(result);
+
+    // 두개의 주사위를 던졌다.
+    // 두개 주사위의 합이 9보다 크면 승리, 아니면 패배 출력
+
+   
+//   var dice1 = Math.floor(Math.random() * 6) + 1;
+//   var dice2 = Math.floor(Math.random() * 6) + 1;
+  
+//   var sum = dice1 + dice2;
+
+//   var result = ( sum >9) ? "승리" : "패배";
+//   document.write("주사위합은 : <b style='font-size:30px;'>"+dicce+"</b> <br>");
+  
+        // 조건연산자
+        // (조건식) ? 참일경우 값 : 거짓일 경우 값;
+
+        // 오늘의 과제 
+        // 주사위 문제
+        // 주사위 2개를 던진다.
+        // 주사위의 합이 7 이상이면 승리 , 아니면 패배
+        // 단, 주사위 2개의 숫자가 모두 같은 숫자라면 승리
+        // 주사위 2개가 1,1 나왔다면 승리, 2,2, 나와도 승리 ...
+        // var choice= parseInt(prompt("주사위 던지기"));
+
+
+        // var dice1 = Math.floor(Math.random() * 6) + 1;
+        // var dice2 = Math.floor(Math.random() * 6) + 1;
+        // var sum = dice1 + dice2;
+        // alert(dice1+dice2);
+        // var result=((sum)>=7) ? "승리" : "패배" ;
+        // var result = ( dice1 == dice2) ? "승리" : result;
+        // document.write("주사위합은 : <b style='font-size:30px;'>"+sum+"</b> <br> "+result);
+    
+
+
+
+        // A 유형 문제
+        // 가위바위보 하기
+        // 컴퓨터와 가위바위보 게임하기
+        // 1.가위 2.바위 3.보
+        // 컴퓨터 랜덤값으로 1~3 중에 나오는 값과 내가 입력한 값 비교하여
+        // 내가 이겼는지 비겼는지 패배 하였는지 출력하기
+
+        // var userInput = parseInt(prompt("가위(1), 바위(2), 보(3) 중 하나를 선택하세요."));
+        // var computerInput = Math.floor(Math.random() * 3) + 1;
+        
+        // document.write("<h1>결과</h1>");
+        // document.write("<p>컴퓨터: " + computerInput + "</p>");
+        // document.write("<p>사용자: " + userInput + "</p>");
+        // document.write("<p>" + resultMessage + "</p>");
+        // document.write("가위바위보 승부결과는: " + resultMessage);
+        // var result = ("이겼습니다");
+        // var result = ("비겼습니다");
+        // var result = ("패배했습니다");
+
+        // var age=129;
+        // var temp=0;
+        // if( age>=20){
+        //     document.write("성인이다.");
+        //     var temp=123; // 지역변수 - 블럭안에서 생성된 변수는 해당블럭에서만 사용가능
+        //     temp=2323;
+        //     const pi=3.14;
+        // }
+        // document.write(temp);
+        // document.write("나는 if문과 아무상관없이 동작합니다.");
+
+
+        // var age=19;
+        // if(age>=20){ // 이곳의 {}는 조건식이 참일경우에만 실행
+        //     document.write("성인이다.");
+        // } else{ //else뒤의 {}는 조건식이 거짓일 경우에만 실행
+        //     document.write("성인이 아니다.");
+        // }
+
+        //바이킹 탑승 조건 키가 150이상인 사람만 탈수 있다.
+
+        // var tall = 161;
+        // if (tall >= 150)    {
+        // document.write("ㄱㄱ");
+        // } else {
+        // document.write("ㄴㄴ");
+        // }
+
+        // 동전 앞면 뒷면 맞추기 1.앞면 2.뒷면
+        // var coin = Math.floor(Math.random() * 2) + 1;
+        // var select= parseInt(prompt("1.앞면 2.뒷면"));
+
+        // if (coin == select) {
+        // document.write("정답");
+        // } else {
+        // document.write("삐! 아니다");
+        // }
+
+        // 주사위 1개를 던진다. 2의 배수가 나올경우에만 승리, 아니면 패배 출력
+
+        // var dice = Math.floor(Math.random() * 6) + 1;
+
+        // if (dice % 2 == 0) {
+        // document.write("승리");
+        // } else {
+        // document.write("패배");
+        // }
+
+        
+        // var Select = 1; //나의 선택값 (1은 가위 2는 바위 3은 보)
+
+        
+        // var ComputerSelect = Math.floor(Math.random() * 3) + 1;
+
+        
+        // if (Select === ComputerSelect) { //사용자 선택과 컴퓨터 선택이 같은 경우를 확인한다. === 연산자는 값과 타입을 모두 비교하는 엄격한 비교 연산자다. 선택이 같을 경우 "무승부"를 출력.
+        // document.write("무승부");
+        // } else if (
+        // (Select === 1 && ComputerSelect === 3) || //사용자가 1(가위)을 선택하고 컴퓨터가 3(보)을 선택한 경우 승리.
+        // (Select === 2 && ComputerSelect === 1) || //사용자가 2(바위)을 선택하고 컴퓨터가 1(가위)을 선택한 경우 승리.
+        // (Select === 3 && ComputerSelect === 2) //사용자가 3(보)을 선택하고 컴퓨터가 2(바위)을 선택한 경우 승리.
+        // ) {
+        // document.write("승리");
+        // } else  { //위의 모든 조건이 거짓인 경우 "패배"를 출력
+        // document.write("패배");
+        // }
+
+
+        //주사위를 컴퓨터와 대결하기
+        //주사위 각각 2개를 던진다.
+        //승리 조건은 두주사위의 합이 큰쪽이 이기고, 같은 숫자가 나온경우에 승리
+
+        // var com1 = Math.floor(Math.random()*6)+1;
+        // var com2 = Math.floor(Math.random()*6)+1;
+
+        // var user1 = Math.floor(Math.random()*6)+1;
+        // var user2 = Math.floor(Math.random()*6)+1;
+
+        // var com_sum= com1+com2;
+        // var user_sum= user1+user2;
+
+        //             if (user_sum > com_sum) {
+        //     if (com1 == com2) {
+        //         if (user1 == user2) {
+        //         alert("나의 승리");
+        //         } else {
+        //         alert("나의 패배");
+        //         }
+        //     } else {
+        //         alert("나의 승리");
+        //     }
+        //     }else if(user_sum < com_sum){// 컴퓨터의 합이 더큰경우
+        //         if(user1==user2){ // 내 주사위숫자가 같은경우
+        //             if(com1==com2){ // 컴퓨터합이 크고 나는숫자가 같은경우에 컴퓨터도 같은숫자라고
+        //                 alert("나의패배");
+        //             }else{
+        //                 alert("나의 승리");
+        //             }
+        //         }else{
+        //             alert("나의 패배");
+        //         }
+        //     }else{ // 주사위 합이 컴퓨터와 내가 같은경우
+        //          if(user1==user2 && com1==com2){
+        //             alert("비김");
+        //          }else if(user1==user2){
+        //             alert("나의 승리");
+        //          }else if(com1==com2){
+        //             alert("나의 패배");
+        //          }else{
+        //             alaer("비김");
+        //          }
+        //     }
+            
+            // 점수가 100~90 a, 89~80 B, 79~70 C, 나머지는 F
+            // var score=91;
+            // if(score <=100 && score >=90)
+            //     alert("A등급");
+            // else if(score <90 && score >=80)
+            //     alert("B등급");
+            // else if(score <80 && score >=70)
+            //     alert("C등급");
+            // else
+            //     alert("F등급");
+
+            //100m달리기, 10초이하는 매우빠름,
+            //10~12초는 빠름, 13~17초 보통, 18초이상 느림 이라고 출력
+            // var run_time = 5;
+
+            // if (run_time <= 10) {
+            // document.write("매우 빠름");
+            // } else if (run_time <= 12) {
+            // document.write("빠름");
+            // } else if (run_time <= 17) {
+            // document.write("보통");
+            // } else {
+            // document.write("느림");
+            // }
+
+            // var time= 119;
+            // var basePrice = 1000;
+            // var baseTime = 30;
+            // var additionalPrice = 100;
+            // var twoHourPrice = 1500;
+            // var fourHourPrice = 2500;
+            // var eightHourPrice = 10000;
+
+            // var parkingPrice = 0;
+
+            // if (time <= baseTime) {
+            // parkingPrice = basePrice;
+            // } else if (time < 120) {
+            // var excessTime = time - baseTime;
+            // parkingPrice = basePrice + Math.ceil(excessTime / 10) * additionalPrice;
+            // } else if (time < 240) {
+            // parkingPrice = twoHourPrice;
+            // } else if (time < 480) {
+            // parkingPrice = fourHourPrice;
+            // } else {
+            // parkingPrice = eightHourPrice;
+            // }
+
+            // document.write("주차 시간: " + time + "분");
+            // document.write("주차 요금: " + parkingPrice + "원");
+
+
+            // var excessMinutes = time - baseTime;
+            // var additionalPrice = Math.ceil(excessMinutes / 10) * additionalPrice;
+
+
+
+            // if (excessMinutes > 0) {
+            // document.write("(기본요금 " + basePrice + "원에 " + excessMinutes + "분 초과 " + additionalFee + "원)");
+            // }
+
+
+
+
+
+        // 주차장의 기본요금이 1000원이다. 1000원에 기본 주차 시간은 30분이다.
+        // 10분 초과시 100원씩 추가 요금있다.
+        // 2시간 이상 주차시 기본요금은 1500원이다.
+        // 4시간 이상 주차시 기본요금은 2500원이다.
+        // 8시간 이상 주차시 요금은 추가요금없이 무조건 10000원이다.
+
+        // 주차 시간을입력해서 주차요금이 얼마인지 출력하기 , 주차시간은 분단위입력
+        // 요금 예시) 61분 주차시 요금은 1300원(기본요금 1000원에 30분초과 300원)
+        // 119분 주차시 요금은 1800원(기본요금 1000원에 80분초과 800원)
+        // 134분 주차시 요금은 1600원(2시간 이상주차이기때문에 기본요금은 1500원이고 10분초과 100원)
+
+
+        // 숫자를 하나입력받는다. 숫자는 1~3 중에 하나만 입력
+        // 1을 입력했다면 빨간색 사각형이
+        // 2를 입력했다면 노랑색 사각형이
+        // 3을 입력했다면 핑크색 사각형이 화면에 나오게 하시오
+        // 사각형의 크기는 너비:200, 높이 100
+
+        //<style> .red{ background:red;} </style>
+        //document.write("<div class=red></div>");
+
+        // var number = parseInt(prompt("숫자를 입력하세요 (1~3):"));
+
+        // if (number === 1) {
+        // document.write("<div style='width: 200px; height: 100px; background: red;'></div>");
+        // } else if (number === 2) {
+        // document.write("<div style='width: 200px; height: 100px; background: yellow;'></div>");
+        // } else if (number === 3) {
+        // document.write("<div style='width: 200px; height: 100px; background: pink;'></div>");
+        // } else {
+        // document.write("올바른 숫자를 입력해주세요.");
+        // }
+
+        // 주사위 게임 문제
+        // 주사위가 3개있다.
+        // 3개의 주사위를 굴렸을때 나온 숫자를 각각 a,b,c 라고 한다면
+        // 세숫자가 모두 다른경우 a+b+c의 값 출력
+        // 두 숫자가 같고 나머지가 다른숫자라면 a*a+b*b+c*c 값 출력
+        // 세 숫자가 모두 같다면 a*b*b의 값출력
+
+        
+        // var a = Math.floor(Math.random() * 6) + 1; 
+        // var b = Math.floor(Math.random() * 6) + 1;
+        // var c = Math.floor(Math.random() * 6) + 1;
+
+        
+        // if (a !== b && b !== c && c !== a) {
+        //     var sum = a + b + c;
+        //     document.write("세 숫자가 모두 다른 경우: ", sum);
+        // }
+        
+        // else if ((a === b && b !== c) || (a === c && c !== b) || (b === c && c !== a)) {
+        //     var result = a * a + b * b + c * c;
+        //     document.write("두 숫자가 같고 나머지가 다른 숫자인 경우: ", result);
+        // }
+        
+        // else if (a === b && b === c) {
+        //     var product = a * b * b;
+        //     document.write("세 숫자가 모두 같은 경우: ", product);
+        // }
+        
+        // // 도형 입력 받기
+        //     var shape = prompt("도형을 입력하세요 (정사각형, 직각사각형, 원형):");
+
+        //     // 배경색 입력 받기
+        //     var backgroundColor = prompt("배경색을 입력하세요 (빨강, 파랑, 노랑, 핑크):");
+
+        //     // 너비 입력 받기
+        //     var width = parseInt(prompt("너비를 입력하세요 (100px 이상):"));
+
+        //     // 높이 입력 받기
+        //     var height;
+        //     if (shape !== "원형") {
+        //     height = parseInt(prompt("높이를 입력하세요 (100px 이상):"));
+        //     }
+
+        //     // 조건 검사
+        //     if (shape === "정사각형" && width !== height) {
+        //     alert("정사각형의 너비와 높이는 같아야 합니다.");
+        //     } else if (width < 100 || (shape !== "원형" && height < 100)) {
+        //     alert("너비와 높이는 100px 이상이어야 합니다.");
+        //     } else {
+        //     // 도형 출력
+        //     var shapeElement = document.createElement("div");
+        //     shapeElement.style.width = width + "px";
+        //     shapeElement.style.height = height + "px";
+        //     shapeElement.style.backgroundColor = backgroundColor;
+
+        //     if (shape === "원형") {
+        //         shapeElement.style.borderRadius = "50%";
+
+            // }
+
+            // document.body.appendChild(shapeElement);
+            // }
+
+            var shape = prompt("도형 입력 (square, rectangle, circle):");
+            var color = prompt("배경색 입력 (red, blue, yellow, pink):");
+            var width = parseInt(prompt("너비를 입력하세요 (100px 이상):"));
+            var height = parseInt(prompt("높이를 입력하세요 (100px 이상):"));
+
+            if( shape!="원형"){
+                        var height=parseInt(prompt("높이 100px이상 입력"));
+            }
+
+            if (shape === "square") {
+                document.write("<div style='width:" + width + "px; height:" + width + "px; background:" + color + "'></div>");
+            } 
+            else if (shape === "rectangle") {
+                document.write("<div style='width:" + width + "px; height:" + height + "px; background:" + color + "'></div>");
+            } 
+            else if (shape === "circle") {
+                document.write("<div style='width:" + width + "px; height:" + width + "px; border-radius:50%; background:" + color + "'></div>");
+
+            var styles="";
+            if(shape==="원형")
+                styles="border-radius:100%;"; // styles = styles+"dsadsadas";
+
+            if(bg==="빨강")
+            styles+="background:red;";
+            else if(bg==="파랑")
+            styles+="background:blue";
+            else if(bg==="노랑")
+            styles+="background:yellow;";
+            else if(bg==="핑크")
+            styles+="background:pink;";
+
+            styles+="width:"+width+"px;";
+            if(shape==="원형");
+
+    }
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

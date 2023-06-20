@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 마지막</title>
+    <style>
+        #borderWrap{
+            width: 700px;
+            height: 500px;
+            border-collapse: collapse;
+        }
+        #borderWrap tr td{
+            border: 1px solid #000;
+
+        }
+        .class{
+            width: 300px;
+        }
+        #borderWrap .board1{
+            border-top: 0px;
+            border-left: 0px;    
+        }
+        .board2{
+            
+        }
+        #borderWrap .board3{
+            border-top: 0px;
+            border-right: 0px;
+        }
+        
+        #borderWrap .board7{
+            border-left: 0px;
+            border-bottom: 0px;
+
+        }
+        #borderWrap .board9{
+            border-bottom: 0;
+            border-right: 0;
+        }
+        .class{
+            width: 50px;
+            height: 150px;
+        }
+        .class2{
+            width: 100px;
+            height: 100px; /* 4번과 6번을 class2로 지정해놓고 기본width값으로지정해야 5번째도형이 정상적으로 출력이된다. */
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <table id="borderWrap">
+        <tr>
+            <td class="board1"></td>
+            <td class="board2 class"></td>
+            <td class="board3"></td>
+        </tr>
+
+        <tr>
+            <td class="board4 class2"></td>
+            <td class="board5"></td>
+            <td class="board6 class2"></td>
+
+            <tr>
+                <td class="board7"></td>
+                <td class="board8 class"></td>
+                <td class="board9"></td>
+            </tr>
+        </tr>
+    </table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div</title>
+    <style>
+        #first{
+            height:300px;
+            width: 100px; /* F12로 개발자모드를켰을때 주황색 표시는 바깥쪽 영역이다 다른 영역이 빈자리에 들어오지 않는다*/
+            display:inline-block; /* 지정된크기만큼 자신의영역표시가 된다.*/
+            float:right;  /*float:left를 주게된다면 윗줄에있는 inline-block을 무시하고 이동이된다. right로 설정시 오른쪽부터 정렬이된다고보면된다. 쉽게설명하자면 right설정은 오른쪽부터줄선다는개념이다.*/
+        }   
+        #parent{
+            width:300px;
+            height: 200px;
+            border: 4px solid red;
+            border-radius: 0px; /*모서리를 깎아주는거라고 생각하면된다 반지름만큼 깎이는개념이라고 보면된다.*/
+            position: relative; /* position을 입력해야 부모가될수있음. 입력하지않으면 부모가될수없다. */
+        }
+        #child1, #child2, #child3, #child4 {
+            width: 100px;
+            height: 35px;
+
+        } /* #parent div로 해도되지만 이렇게하면 그아래가 싹다 한번에되기때문에 상황에따라서 #child, #child2 이런식으로 지정해주는것도 좋다. 여러개를지정할때는 ,을 붙여서 나열해주면된다.*/
+        #child1{
+            background:blue;
+            
+             /*여기값을바꾸면 y축이 이동하는것이다.*/
+             /* X축으로 100만큼 이동하는거고 Y축은 0만큼 이동하는것이다. 왜냐면 100PX 하나만 적었기때문이다. left에 의해서 x축이 100만큼 이동한것이다.*/
+        }
+        #child2{
+            background:green; 
+             /* absolute로하면 파란색보다 위로올라간다*/
+            
+            /*이렇게되어있으면 좌표가 200,70 좌표로이동한다고 생각하면된다. parent안에서... left값을 더크게설정하면 parent밖으로 나갈수는있지만 되도록이면 parent안에서 설정하는것이맞다. */
+        }
+        #child3{
+            background:pink;
+            position:relative;
+            top:0px;
+            left:0px; 
+        }
+        #child4{
+            background: violet;
+            position: absolute; /* 위에서부터 기준점이잡혔기때문에 기존첫번째순서인 blue가 없는취급된다*/
+            top: 0px;
+            left: 0px;
+        }
+        #parent{
+            height: 1300px;
+        }
+        #parent2{
+            position:fixed;
+            top:200px;
+            left:400px;
+            width: 100px;
+            height: 50px;
+            background: yellow;
+            margin-top: 50px; /* 위쪽에있는 parent1과의 사이부분을 벌려주는거라고 생각하면된다*/
+        }
+        #two{
+            margin-bottom: 100px;
+        }
+
+        #stk ul li{
+            float:left;
+            padding-left:10px
+        }
+        #stk ul{list-style-type: none;}
+        #stk{
+            position: sticky;
+            top:0;
+            height: 50px;
+            background: #46fc92;
+            z-index: 100; /*좌표축을 표현하는 것이기 때문에 단위는 생략한다.*/
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="first">
+        나 div입니다.
+    </div>
+    <div id="two">
+        나는 두번째 div 입니다.
+    </div>
+    <div id="stk">
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+        </ul>
+    </div>
+
+    <div id="parent">
+        <div id="child1"></div>
+        <div id="child2"></div>
+        <div id="child3"></div>
+        <div id="child4"></div> <!-- id지정을이어서할때 div#child4 적은후 탭키를누르면 자동완성으로만들어진다-->
+    
+    <div id="parent2">
+
+        </div>
+        
+    </div>
+</body>
+</html>

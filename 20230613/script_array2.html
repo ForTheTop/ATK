@@ -1,0 +1,47 @@
+<!--  script_array.html  -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서</title>
+
+<script>
+    var num = 10;
+
+    function welcome() {
+        alert("왜 나를 클릭했냐?");
+    }
+
+    function show_number() {
+        var show = document.getElementById("showbox");
+        var result = "";
+        
+        for (var i = 1; i <= num; i++) {
+            result = result + i + "<br>";
+        }
+        
+        show.innerHTML = result;
+    }
+
+    function get_name() {
+        var name = prompt("너의 이름은?");
+        var myname = document.getElementById("myname");
+        myname.innerHTML = name;
+    }
+</script>
+
+</head>
+<body>
+    
+<button onclick="welcome()"> 나를 클릭해줘~</button>
+<button onclick="show_number()">10까지 출력</button>
+
+<div id="showbox"></div>
+
+<button onclick="get_name()">너의 이름은?</button>
+
+<b id="myname"></b>
+
+</body>
+</html>
