@@ -48,4 +48,4 @@ window.onload=function(){
         //     list.classList.toggle("list_active");
         // else
         //     list.classList.add("list_active");
-    }
+    }asd
