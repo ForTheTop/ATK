@@ -1,0 +1,28 @@
+body {
+      text-align: center;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    #game-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    
+    #game-container label,
+    #game-container input {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    #game-container button {
+      padding: 5px 10px;
+    }
+    
+    #game-info {
+      margin-top: 20px;
+      font-weight: bold;
+    }
