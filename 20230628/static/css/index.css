@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit; /*부모에서 지정해준 컬러를 상속받는다.*/
+}
+
+#wrap {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 20px;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.header-logo {
+  width: 100px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav a {
+  margin-left: 15px;
+}
+
+.header-nav a:nth-child(2) /*상위태그의 n번째 자식을 선택해줄수 있음*/ {
+  display: flex;
+  align-items: center;
+  padding: 7px 17px;
+  color: #fff;
+  background: #000;
+  border-radius: 7px;
+}
+
+.header-nav a:nth-child(2) i {
+  padding-left: 10px;
+}
+
+.main {
+  max-width: 100%;
+  display: flex;
+  padding: 0;
+  margin: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.flexitem {
+  width: 30%;
+  max-width: 300px;
+  border: 1px solid #464646;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.like{
+  align-self: flex-end;
+}
+
+
+/*
+@media 조건 {
+  스타일속성: 속성값;
+
+  @media 키워드 논리연산자 (조건){
+
+  }
+  키워드 - all, screen, print, tv, tty, projection 등등
+  논리연산자 - and, or
+    and - 양쪽 조건이 모두 참인경우에 참
+    or - 한쪽의 조건만 참이면 참
+    
+  조건 - max-width(이하), min-width(이상)
+    세로모드 : orientation:portrait
+    가로모드 : orientation:landscape
+    너비와 높이 비율
+    aspect-ratio:6/4 -> 너비가 6 높이가 4 6:4 비율
+    색상 비트수( 색상 표현 정도)
+      color:8  -> 색상이 8비트 라면
+
+      1 bit <- 단위
+      1비트로 표현가능한건 0과1뿐이다.
+
+      2비트로 표현가능한건 1비트가 2배니까 00 11 10 01 이런식으로 표현이가능하다.
+
+      3비트로 표현가능한건 2*2*2 = 8
+
+      4비트로 표현가능한건 2*2*2*2 = 16
+
+      ...... 이런식으로 256색상까지 계속ㅎ
+
+    !참고 : 반응형 제작할때 두가지 방법으로 제작한다.
+      1. 모바일 환경 --> pc 환경 : 이게 더 편함. 모바일환경소스가 더많아서그렇다.
+      min
+
+      2. PC환경에서 --> 모바일환경으로 제작
+      max (점점작아지는(pc에서 모바일) 환경으로될때 max로하는게맞다.
+
+      높이가 너비에비해 작으면 가로
+      높이가 너비에비해 크면 세로
+
+*/
+
+@media (max-width:768px){ /* 너비가 768이하 라면 */
+    #flex{
+      column-gap: 15px;
+    }  
+    .flexitem{
+      width:40%;
+    }
+  .title{
+      color: red;
+    }
+    .like{
+      color: blue;
+    }
+}
+
+@media screen and (orientation:portrait){
+  .title{
+  color:red;
+  }
+}
+
+/*768px보다 작으면 3개였다가 768보다 크게하면 2개로아이콘이보인다. 
+화면 출력 시 드래그로 화면 크기를 줄이면 3개에서 2개로 출력되는 이유는 
+해당 @media 쿼리에서 .flexitem 요소의 너비를 40%로 설정했기 때문이다. 
+화면 너비가 768px 이하일 때 .flexitem 요소의 너비가 더 좁아지기 때문에 
+한 줄에 표시되는 요소의 개수가 줄어들게 된다. 
+정확하게확인하려면 PC환경이아닌 태블릿환경에서 확인하는게좋다. */
+
+/*@media (max-width: 768px) {
+  #flex {
+    column-gap: 15px;
+  }
+  .flexitem {
+    width: 40%;
+  }
+  .title {
+    color: red;
+  }
+  .like {
+    color: blue;
+  }
+}*/
+
+@media (max-width: 576px) {
+  .flexitem {
+    width: 75%;
+  }
+
+  .title{
+    color:black;
+    }
+}

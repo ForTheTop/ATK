@@ -1,0 +1,42 @@
+#main_top{
+    display: flex;
+}
+
+.top_left{
+        width: 500px;
+        padding: 20px; /*실 사용영역은 왼쪽여백20 오른쪽여백20해서 460px이다*/
+}
+.top_left img{
+    width: 460px;
+}
+.top_right{
+        width: 500px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.item_title{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.item_price{
+    /*margin-bottom: 30px;*/
+    flex-grow: 1;
+    padding-top: 30px;
+}
+.item_button button:first-child{
+    border:1px solid #346aff;
+    color:1px solid #3461ff;
+    background: #fff;
+    width:200px;
+    height:50px;
+}
+.item_button button:last-child{
+        background: #346aff;
+        border:1px solid #346aff;
+        color: #fff;
+        width: 200px;
+        height:50px;
+}
