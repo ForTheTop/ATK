@@ -1,0 +1,33 @@
+#subway-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .subway {
+    width: 100px;
+    height: 30px;
+    background-color: #888;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .station {
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  #output {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }

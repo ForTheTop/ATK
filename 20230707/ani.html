@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+   body{
+            background:black;
+        }
+    
+        #yp{
+            width: 200px;
+            height: 200px;
+            background: red;
+            position: absolute;
+            animation: move 3s infinite;
+     
+        }
+
+        #yp img {
+            width: 1000px;
+            height: 1000px;
+        }
+
+    @keyframes move{
+        from {left:0px}
+        to   {left: 300px;}
+    }
+
+    #ball {
+    background-image: url(./static/image/yp2.jpg);
+    width: 500px;
+    height: 1300px;
+    background-color: deepskyblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 550px;
+    animation: zombie 1s ease-in infinite alternate;
+    transform: scale(1); /* 초기 크기 */
+}
+
+@keyframes zombie {
+    0% {
+        transform: scale(1); /* 초기 크기 */
+    }
+    50% {
+        transform: scale(2); /* 2배 크기 */
+    }
+    100% {
+        transform: scale(1); /* 초기 크기로 복귀 */
+    }
+}
+
+
+
+@keyframes zombie {
+    0% {
+        top: 0px;
+        left: 550px;
+    }
+    95% {
+        width: 100px;
+    }
+    to {
+        width: 115px;
+        top: 300px;
+        left: 550px;
+        height: 90px;
+    }
+}
+</style>
+<body>
+    <div id="yp">
+        <img src="./static/image/yp1.jpg">
+    </div>
+
+    <div id="ball">
+
+    </div>
+</body>
+</html>
+
+<!--
+
+
+           animation-name:move;  /*애니매이션에 사용할 keyframes 이름*/
+            animation-duration:2s; /*애니매이션 적용 시간 */
+            animation-timing-function: ease; /* 애니매이션 흐름속도 */
+            animation-delay: 2s; /*지정된 시간 이후에 실행 */
+            animation-iteration-count: 5;/*애니메이션 반복횟수*/
+            animation-direction: alternate; /*애니메이션 방향 설정 , 편도 , 역방향 , 왕복 */
+            /*normal-편도 , reverse-역방향 , alternate-왕복 */
+-->

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/css/quiz.css">
+    <script src="./static/js/quiz.js"></script>
+</head>
+<body>
+    <!--
+        국어점수 , 영어점수 , 수학점수 100~90점 A , 89~80 B , 79~70 C , 그외 F
+        html 및 javasrcipt로 출력하세요. css는 하고 싶으면 하고 평균점수도 출력
+
+
+    -->
+    <h1>성적 평균 계산기</h1>
+  
+  <label for="korean">국어 점수:</label>
+  <input type="number" id="korean" min="0" max="100"><br>
+  
+  <label for="english">영어 점수:</label>
+  <input type="number" id="english" min="0" max="100"><br>
+  
+  <label for="math">수학 점수:</label>
+  <input type="number" id="math" min="0" max="100"><br>
+  
+  <button onclick="calculateAverage()">평균 계산</button>
+  
+  <h2 id="result"></h2>
+</body>
+</html>

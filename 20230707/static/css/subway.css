@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#map{
+width: 1000px;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+row-gap: 20px;
+}
+
+.station{
+    width: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.mark{
+    position: relative;
+}
+
+.rail{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top:9px;
+    background:  rgb(53, 53, 170);
+    z-index: -1;
+}
+
+.fa-regular{
+    background: #fff;
+}
+
+.w95{width: 95%;}
+
+.w95-top{
+    border-top-right-radius: 33px;
+}
+
+
+.w95-bottom{
+    border-bottom-right-radius: 33px;
+}
+
+.w95-top-right{
+    left: 5%;
+    border-top-left-radius: 33px;
+}
+
+.w95-bottom-right{
+    left: 5%;
+    border-bottom-left-radius: 33px;
+}
+
+
+.rad {
+    width: 100px;
+    height: 88px;
+    position: absolute;
+    top: 31.1px;
+    border: 5px solid rgb(53, 53, 170);
+    border-radius: 7px;
+    }
+
+
+.left{
+    border-style:none solid none none;
+}
+
+.right{
+    border-style: none none none solid;
+}
+
+.train{
+    color: #fff;
+}
+
+.t-gold{ /*1번 차량*/
+    color: gold;
+}
+
+.t-tomato{  /*2번 차량*/
+    color: tomato;
+}
+
+.t-lime{    /*3번 차량*/
+    color:lime;
+}
+
+.t-hotpink{ /*4번 차량*/
+    color: hotpink;
+}
