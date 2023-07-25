@@ -1,0 +1,70 @@
+body {
+    margin:0;
+    padding:0;
+  }
+  
+  /* Increase the font size of the <h1> element */
+  .header h1 {
+  font-size: 40px;
+  }
+  .header p {
+    font-size: 25px;
+  }
+  
+  #greet {
+    font-size:40px;
+    background-color:#aaa;
+  }
+  
+  .fakeimg {
+    
+    background: #aaa;
+  }
+  
+  
+  body {
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+  }
+  
+  
+  #qu p {
+    color:red;
+    font-size:50px;
+    
+  }
+  
+  
+  .fa {
+  
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  }
+  
+  footer {
+    text-align:right;
+    margin-bottom:0;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+  background: #3B5998;
+  color: white;
+  }
+  
+  .fa-twitter {
+  background: #55ACEE;
+  color: white;
+  }
+  
+  
+  .fa-linkedin {
+  background: #007bb5;
+  color: white;
+  }

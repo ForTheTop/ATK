@@ -1,0 +1,26 @@
+.mv-top-title{
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.mv-left-intro{
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.mv-left-bg{
+    transform: skewX(-30deg) translateX(100%);
+}
+
+.show{
+    opacity: 1;
+    transform: none;
+}
+
+.show-opacity{
+    opacity: 1;
+}
+
+.banner.scrolled {
+    opacity: 1;
+}

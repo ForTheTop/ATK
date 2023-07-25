@@ -1,0 +1,685 @@
+    :root{
+        --main-color-blue: #00b8ff;
+    }
+
+    *{
+        word-break: keep-all;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+
+    header{
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        padding: 0 40px;
+        box-sizing: border-box;
+        z-index: 100;
+    }
+
+
+    .header-wrapper{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .main-logo-img{
+        width: 112px;
+        height: 23px;
+        background-image: url(../image/logo-w.svg);
+        background-repeat: no-repeat;
+        background-size: 112px 23px;
+    }
+
+
+    .main-logo{
+        position: fixed;
+        top: 20px;
+        left: 40px;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .hidden{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        clip-path: inset(0px 0px 99.9% 99.9%);
+        overflow: hidden;
+    }
+
+
+    .hamburger-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+
+    .hamburger-button span{
+        position: absolute;
+        display: block;
+        width: 26px;
+        height: 3px;
+        background-color: #fff;
+    }
+
+
+    .hamburger-button.scrolled span {
+        background-color:#00b8ff;
+    }
+
+
+    .button-bottom{
+        margin: 11px 0 0 10px;
+    }
+
+
+    .hamburger-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 998;
+    }
+
+
+    .hamburger-button.active span {
+        background-color:#00b8ff;
+    }
+    
+
+    .hamburger-button.scrolled span {
+        background-color:#00b8ff;
+    }
+
+
+    .hamburger-container.active {
+        transform: translateX(0);
+    }
+    
+
+    .hamburger-menu-one,
+    .hamburger-menu-two,
+    .hamburger-menu-three {
+        padding: 20px;
+    }
+    .main-title{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../image/main_visual_fullscreen.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .title-text{
+        color: #fff;
+        font-size: 66px;
+        font-weight: bold;
+        line-height: 1.4;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgb(0 0 0/ 40%);
+        transition: .5s;
+    }
+
+
+    .intro-container{
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+
+
+    .intro{
+        margin: 100px auto;
+        max-width: 800px;
+    }
+
+
+    .intro-title{
+        font-size: 35px;
+        line-height: 1.3;
+        letter-spacing: -0.025em;
+        font-weight: bold;
+        color: #374553;
+        transition: .5s;
+    }
+
+
+    .intro-title::after{
+        display: inline-block;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--main-color-blue);
+        margin-left: 5px;
+    }
+
+
+    .intro-text{
+        font-size: 18px;
+        line-height: 1.5;
+        letter-spacing: -0.025em;
+        font-weight: bold;
+        color: #aaa;
+        margin-top: 16px;
+        transition: .5s;
+    }
+
+
+    .intro-img{
+        padding: 50px 0;
+        transition: .5s;
+    }
+
+
+    .intro-img img{
+        max-width: 800px;
+        max-height: 600px;
+        width: 100%;
+        height: auto;
+    }
+
+
+    .count-user-container{
+        position: relative;
+        width: 100%;
+        height: 444px;
+        padding: 64px 0 80px 0;
+        background-color: #F7F8F9;
+        box-sizing: border-box;
+    }
+
+
+    .count-user{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .count-user h2{
+        text-align: center;
+        font-size: 35px;
+        line-height: 1.5;
+        color: #aaa;
+        z-index: 2;
+    }
+
+
+    .blue-text{
+        color: var(--main-color-blue);
+    }
+
+
+    .count-up{
+        font-weight: bold;
+    }
+
+
+    .count-user-bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--main-color-blue);
+        transform: skewX(-30deg) translateX(82%);
+        top: 0;
+        z-index: 1;
+        transition: .5s;
+    }
+
+
+    .more-info{
+        display: none;
+    }
+
+    
+    .more-info-links li{
+        position: relative;
+        border-top: 1px solid #ddd;
+    }
+
+    .more-info-links li a{
+        display: block;
+        width: 100%;
+        padding: 16px 22px;
+        font-size: 15px;
+        color: #374553;
+        font-weight: bold;
+        text-indent: 32px;
+    }
+
+    .bullet-point-circle::before{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+    .bullet-point-circle.main::before{
+        background-color: var(--main-color-blue);
+    }
+
+    .bullet-point-circle.blue::before{
+        background-color: #00469D;
+    }
+
+    .bullet-point-circle.yellow::before{
+        background-color: #FFC400;
+    }
+
+    .bullet-point-circle.orange::before{
+        background-color: #FF6F61;
+    }
+
+    .bullet-point-arrow::before{
+        position: absolute;
+        top: 50%;
+        transform: translate(-5px, -50%);
+        content: "";
+        display: block;
+        width: 32px;
+        height: 20px;
+        background-image: url(../image/arrow-01.svg);
+        background-repeat: no-repeat;
+        background-size: 28px;
+        background-position: left center;
+    }
+
+
+
+    footer{
+        width: 100%;
+        padding: 40px 18px 100px;
+        background-color: #28323C;
+        box-sizing: border-box;
+    }
+
+    .footer-wrapper{
+        max-width: 980px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sns-links{
+        display: grid;
+        grid-template-columns: repeat(4, 30px);
+        column-gap: 10px;
+    }
+
+    .sns-icon-img img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-nav{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 16px;
+    }
+
+    .footer-nav li{
+        margin: 0 20px 8px 0;
+    }
+
+    .footer-nav li a{
+        font-size: 15px;
+        color: #C5C8CE;
+    }
+
+    .footer-nav li .accent{
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+
+    .corp-area{
+        display: flex;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .corp-left, .corp-right{
+        width: 50%;
+    }
+
+    .corp-left dl{
+        display: flex;
+    }
+
+    .corp-left dd{
+        margin-left: 2px;
+    }
+
+    .corp-left dl, .corp-right ul{
+        font-size: 13px;
+        line-height: 1.7;
+        color: #646F7C;
+    }
+
+    .corp-right li a{
+        color: #C5C8CE;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-left: 3px;
+    }
+
+    .download-app{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 340px;
+        height: 90px;
+        z-index: 100;
+        box-shadow: 64px -2px 19px -4px rgb(0 0 0 / 20%);
+    }
+
+    .app-img{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 60px;
+        height: 60px;
+        background-image: url(../image/i-appicon.svg);
+        background-repeat: no-repeat;
+        background-size: 60px;
+        border-radius: 12px;
+        box-shadow: 0 3px 3px -2px rgb(0 0 0 / 20%), 0 3px 4px 0 rgb(0 0 0 / 14%), 0 1px 8px 0 rgb(0 0 0 / 12%);
+        opacity: 0;
+        transition: .5s;
+    }
+
+    .socar-download{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: -0.03em;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .socar-download::after{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../image/arrow-down.svg);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        top: 50%;
+        transform: translate(10px, -50%);
+    }
+
+
+    .download-app-bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 36px;
+        background-color: var(--main-color-blue);
+        transform: skewX(-30deg) translateX(0);
+        z-index: -1;
+        transition: .5s;
+    }
+
+
+    @media screen  and (max-width: 768px) {
+    /* header */
+        header{
+            height: 52px;
+            padding: 0 18px;
+        }
+
+        .header-wrapper{
+            height: 52px;
+        }
+
+        .main-logo-img{
+            width: 100px;
+            height: 20px;
+            background-size: 100px 20px;
+        }
+
+    /* main */
+        .main-title{
+            background-image: url(../image/main_visual_mobile.jpg);
+            background-position: top;
+        }
+
+        .title-text{
+            font-size: 40px;
+        }
+
+    /* intro */
+        .intro-container{
+            padding: 0 22px;
+        }
+
+    /* count-user  */
+        .count-user-container{
+            height: 304px;
+        }
+        
+        .count-user h2{
+            font-size: 25px;
+        }
+
+    /* more-info */
+        .more-info{
+            display: block;
+        }
+
+    /* footer */
+        footer{
+            padding: 40px 18px 72px;
+        }
+
+        .footer-nav li{
+            margin: 0 20px 4px 0;
+        }
+
+        .footer-nav li a{
+            font-size: 13px;
+        }
+
+        .corp-area{
+            flex-wrap: wrap;
+        }
+
+        .corp-left, .corp-right{
+            width: 100%;
+        }
+
+        .corp-right{
+            margin-top: 16px;
+        }
+
+        .corp-left dl, .corp-right ul{
+            font-size: 12px;
+        }
+
+    /* download-app */
+        .download-app{
+            width: 100%;
+            height: 56px;
+        }
+
+        .app-img{
+            width: 40px;
+            height: 40px;
+            background-size: 40px;
+            left: 24px;
+            border-radius: 8px;
+        }
+    }
+
+
+    .banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid #ccc;
+        background: rgba(255, 255, 255, 0.86);
+        z-index: 998;
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none;
+    }
+
+
+    .hamburger-container{
+        background: #374553;
+    }
+
+    .hamburger-container li a {
+        color: white;
+        font-size: 16px;
+        font-weight: 550;
+        letter-spacing: -0.03em;
+        font-weight: 500;
+    }
+
+    .hamburger-container li a:hover{
+        color:#00b8ff;
+        cursor: pointer;
+    }
+
+
+    .hamburger-container ul {
+        margin-bottom: 44px;
+    }
+    .hamburger-container li {
+        padding-bottom: 26px;
+    }
+
+    hr {
+        display: block;
+        height: 1px; /* 라인의 높이 */
+        border: none;
+        border-top: solid 1px #4b5c69;
+        margin: 23px 22px;
+        margin: 10px auto; /* 라인 위아래 여백 */
+        width: 90%;
+        line-height: 1;
+    }
+
+    .hamburger-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        transform: translateX(-60px); /* 버튼을 왼쪽으로 5px 이동 */
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .indent {
+        text-indent: 10px; /* 원하는 만큼의 오른쪽 들여쓰기 크기를 지정 */
+    }
+
+
+    .hamburger span{
+        width: 26px;
+        height: 3px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        top: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 200ms ease-in-out;
+        -moz-transition: 200ms ease-in-out;
+        -o-transition: 200ms ease-in-out;
+        transition: 200ms ease-in-out;
+    }
+
+    .hamburger-button.active .button-top {
+        transform: rotate(45deg) translate(14px, -1px);
+        background-color: #00b8ff;
+    }
+
+    .hamburger-button.active .button-bottom {
+        transform: rotate(-45deg) translate(1.4px, -1px);
+        background-color: #00b8ff;
+    }
+
+    .scrolled .main-logo-img {
+        vertical-align: middle;
+    }
+    /* 스크롤 함수를 동작했다가 다시 위로 올리면 수평이 맞게끔 설정 */
+     /*  Modal 만들기    */
+
+    /* 
+        처음 화면에는 지금 만든 Hide_banner가 안보여야 하니깐
+        초기설정을 display:none으로 설정을 함.
+
+
+        HamburgerButton을 눌렀을 때 , Hide-Container 창이 나오면서 Open-Modal
+        HamburgerButton을 닫았을 때 , Close-Modal
+    */
+
+
+    .Hide_banner{
+        position: absolute;
+        top:0;
+        opacity: 0.7;
+        width: 100%;
+        height: 100vh;
+        }
+    
+        .HideBackground{
+            position: absolute;
+            top: 0;
+            background: black;
+            opacity: 0.7;
+            width: 100%;
+            height: 100vh;
+        }
+    
+    
+        .HideBanner{
+            position: absolute;
+            top:0;
+            width: 100%;
+            height: 60px;
+            background: black;
+            opacity: 0.9;
+        }
+    
+
+    
+        /*      여기까지 Modal      */ 

@@ -1,0 +1,49 @@
+
+/*
+    이 부분은 우리가 처음 메인 페이지에서 애니메이션이 실행되기 위해 
+    자바스크립트 작업 이전에 먼저 스타일을 메인 페이지에 설정했음.
+    이 부분은 쏘카 홈페이지에 있는 부분을 카피하기 위해 메인 홈페이지를 참조함.
+*/
+
+
+
+
+
+/*
+
+                **  transform   **
+
+        skewX : 해당 요소를 수평 축으로  각도를 기울이는 데 사용
+        translateX :해당 요소를 수평 방향으로 이동 시킴 
+        translateY : 해당 요소를 수직 방향으로 이동 시킴
+
+*/
+
+
+.mv-top-title{
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.mv-left-intro{
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.mv-left-bg{
+    transform: skewX(-30deg) translateX(100%);
+
+}
+
+.show{
+    opacity: 1;
+    transform: none;
+}
+
+.show-opacity{
+    opacity: 1;
+}
+
+.banner.scrolled {
+    opacity: 1;
+}

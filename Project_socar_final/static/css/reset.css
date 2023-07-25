@@ -1,0 +1,93 @@
+
+/*
+						** reset.css**
+
+웹 페이지를 렌더링할 때 브라우저가 기본적으로 적용하는 스타일을 초기화하는 역할
+
+
+	개발자가 직접 웹 페이지를 디자인 하거나 스타일을 변경할 때 , 이러한 기본 스타일이
+	원하는 결과를 가져오지 못할 수 있음.
+
+	ex) 특정 요소의 크기나 색상을 변경하고 싶은데 기본스타일 때문에 원하지 않는 결과가 나옴
+
+
+	이러한 이유로 개발자들은 브라우저의 기본 스타일을 초기화하고 , 
+	필요한 스타일을 직접 지정하는 것이 일반적임
+
+	이를 위해 reset.css와 같은 스타일시트를 사용하거나 또는 직접 개발자가 
+	직접 스타일을 지정 및 디자인 , 레이아웃을 구현 이러한 과정을 '스타일 초기화' 라고 한다.
+
+	스타일 초기화를 통해 개발자는 브라우저의 기본 스타일로 인해 발생하는 예상치 못한
+	스타일 충돌을 방지하고 일관성 있는 디자인을 구현할 수 있음
+
+	최종적으로 reset.css는 스타일 초기화를 위한 일종의 스타일시트이다.
+
+
+/*
+
+http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+body {
+	line-height: 1;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+
+blockquote, q {
+	quotes: none;
+}
+
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
